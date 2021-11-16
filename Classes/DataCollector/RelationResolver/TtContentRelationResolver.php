@@ -7,7 +7,7 @@ use PAGEmachine\Searchable\DataCollector\RelationResolver\RelationResolverInterf
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Frontend\Page\PageRepository;
+use TYPO3\CMS\Core\Domain\Repository\PageRepository;
 
 /*
  * This file is part of the PAGEmachine Searchable project.
@@ -20,7 +20,7 @@ class TtContentRelationResolver implements SingletonInterface, RelationResolverI
 {
     /**
      *
-     * @var \TYPO3\CMS\Frontend\Page\PageRepository
+     * @var \TYPO3\CMS\Core\Domain\Repository\PageRepository
      */
     protected $pageRepository;
 
