@@ -59,18 +59,18 @@ class SearchableCommandController extends CommandController
     }
 
     /**
-     * Reset index for one or all languages
+     * Reset index for one or all 
      *
-     * @param int $language
+     * @param string $nameIndex
      * @return void
      * @deprecated since Searchable v3, will be removed with Searchable v4, use "index:reset" instead
      */
-    public function resetIndexCommand($language = null)
+    public function resetIndexCommand($nameIndex = '')
     {
         // @extensionScannerIgnoreLine
         GeneralUtility::logDeprecatedFunction();
 
-        $this->indexingService->resetIndex($language);
+        $this->indexingService->resetIndex($nameIndex);
     }
 
     /**
