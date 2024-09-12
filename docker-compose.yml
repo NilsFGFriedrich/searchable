@@ -32,4 +32,4 @@ services:
     environment:
       - ingest.geoip.downloader.enabled=false
       - discovery.type=single-node
-    # command: ["elasticsearch", "-Elogger.level=DEBUG"]
+    # command: ["elasticsearch", "-Elogger.level=DEBUG"] 
